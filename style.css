@@ -1,0 +1,975 @@
+body{
+  background-color: black;
+}
+/*Start MENU CSS*/
+.NavBar{
+  display: inline;
+  text-align:center;
+  list-style:none;
+  float: center;
+  }
+
+div a{
+  display: inline-block;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  width: 280px;
+  background-color: black;
+  border: 2px solid white;
+  text-decoration: underline;
+}
+
+.NavBar a:hover {
+  background-color: darkturquoise;
+}
+.NavBar img:hover {
+cursor: pointer;
+transform: translateY(-10px);
+}
+#changeImage{
+width: 3%;
+}
+@media only screen and (max-width:500px){
+#changeImage{
+width: 50%;
+}
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .NavBar{
+    margin-left: 0%;
+    display: inline;
+    text-align:center;
+    list-style:none;
+    float: center;
+    }
+}
+/*END MENU CSS*/
+
+
+/*Start HERO SECTION CSS*/
+#hero{
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height:100%;
+}
+/*END HERO SECTION CSS*/
+
+/*Start colum CSS*/
+.column {
+  color:white;
+  margin:3% 1%;
+  text-align: center;
+  float: left;
+  width: 28%;
+  padding: 10px;
+  height: 300px; 
+}
+
+.secondColumn{
+  border-right: 4px dotted white;
+  border-left: 4px dotted white;
+  margin:3% 1%;
+  color:white;
+  text-align: center;
+  float: left;
+  width: 28%;
+  padding: 10px;
+  height: 300px;
+}
+
+.columnTitle{
+  margin-left: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*End colum CSS*/
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+
+  .div{
+    margin: 10%;
+  }
+  .column {
+    color:white;
+    width: 25%;
+    display: inline-block;
+  }
+  .secondColumn{
+    color:white;
+    width: 25%;
+    display: inline-block;
+  }
+  .columnTitle{
+    position: static;
+    display: inline-block;
+    width: 5%;
+    margin-left: -80%;
+  }
+}
+/*Start HeroSlider CSS*/
+.topSerialsTitle{
+    margin-top: 3%;
+    margin-left: 45%;
+    color: white;
+    font-family: arial, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+}
+.slider {
+    width: 1400px;
+    height: 500px; 
+    margin: 0 auto;
+    overflow: hidden; /* Скрива ти останалите слайдъри */
+  }
+  .slider .homeSlider {
+    width: 300%; 
+  }
+  .slider .homeSlider img {
+    width: 1400px;
+    height: 500px;
+    float: left;
+    animation: slideEffect 10s ease infinite; 
+}
+  @keyframes slideEffect {
+    0% {
+      transform: translatex(0);
+    }
+    30% {
+      transform: translatex(-100%); 
+    }
+    50% {
+      transform: translatex(-200%); 
+     
+  }
+  65% {
+    transform: translatex(-200%); 
+}
+80% {
+  transform: translatex(-100%); 
+}
+100% {
+  transform: translatex(0%); 
+ left: 0;
+}
+ }
+
+ @media only screen and (max-width:500px) {
+   .slider{
+     width: 100%;
+   }
+  .homeSlider{
+    width: 40%;
+  }
+  .slider .homeSlider img {
+    width: 400px;
+    height: 500px;
+    float: left;
+    animation: slideEffect 10s ease infinite; 
+  }
+    .topSerialsTitle{
+      margin-top: 20%;
+      margin-left: 10%;
+      color: white;
+      font-family: arial, sans-serif;
+      font-size: 26px;
+      font-weight: bold;
+}
+}
+/* Start CSS for title sentence in Moives.html */
+.titleMovies{
+color: white;
+text-align: center;
+}
+/* Start CSS for title sentence in Moives.html */
+/*End HeroSlider CSS*/
+/*Add MovieCard CSS*/
+.movieCard {
+    display: inline-block;
+    text-align:center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    max-height: 800px;
+    margin-left: 2%;
+    margin-top: 3%;
+    font-family: arial;
+  }
+  .movieCard:hover{
+    transform: translateY(-30px);
+  }
+ 
+.cardPhoto{
+    width: 300px;
+    height:300px;
+  }
+  .movieCard h1,p{
+    color: white;
+  }
+  .year {
+    color: grey;
+    font-size: 22px;
+  }
+/*End MovieCard CSS*/
+
+/*Start ContactForm CSS*/
+.form {
+    width: 340px;
+    height: 440px;
+    background: #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0 0 40px 5px #000;
+    margin-top: 5%;
+    margin-left: 40%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+  }
+  h2 {
+    margin: 10px 0;
+    padding-bottom: 10px;
+    width: 180px;
+    color: #78788c;
+  }
+  input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family: "Montserrat", sans-serif;
+    transition: all 0.3s;
+    border-bottom: 2px solid #bebed2;
+  }
+  .message{
+      width: 90%;
+      height: 20%;
+  }
+  .afterClick{
+    margin-top: 3%;
+    font-size: 150%;
+    border: 2px solid;
+    background-color: black;
+    border-color: orange;
+    color: white;
+    visibility: hidden;
+  }
+  .afterClick:hover{
+    cursor: pointer;
+    transform: translateY(-20px);
+    text-decoration: underline;
+  }
+
+/*End ContactForm CSS*/
+@media only screen and (max-width:500px) {
+.form{
+  margin-left: 3%;
+  width: 80%;
+}
+}
+
+/* Start Peaky Blinders CSS*/
+.ReadMore {
+  color: white;
+  margin-left: 0%;
+font-size: 120%;
+}
+.Image{
+  margin-bottom: 0%;
+  margin-left: 10%;
+}
+.Trailers{
+margin-left: 5%;
+}
+.Background{
+border-color: blue;
+text-decoration: none;
+}
+
+.Background:hover {
+  background-color: darkturquoise;
+  border-radius: 0% 45% 0%;
+  opacity: 0.7;
+
+}
+.Peakyslider{
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+.Peakyslider figure div{
+  float: left;
+  width: 20%;
+}
+.Peakyslider figure img{
+width: 100%;
+height: 100vh;
+background-size: cover;
+background-position: center ;
+background-repeat: no-repeat;
+float: left;
+}
+.Peakyslider figure{
+  position: relative;
+  width: 500%;
+  margin: 0;
+  animation: animate 20s infinite;
+}
+@keyframes animate{
+  0%{left: 0%;}
+  10%{left:0%;}
+  12%{left:-100%;}
+  22%{left:-100%;}
+  24%{left:-200%;}
+  34%{left:-200%;}
+  36%{left:-300%;}
+  46%{left:-300%;}
+  48%{left:-400%;}
+  58%{left:-400%;}
+  60%{left:-300%;}
+  70%{left:-300%;}
+  72%{left:-200%;}
+  82%{left:-200%;}
+  84%{left:-100%;}
+  94%{left:-100%;}
+  96%{left:0%;}
+  100%{left:0%;}
+}
+/* End PeakySlider CSS */
+/* Start Star CSS*/
+.checked{
+  color: orange;
+  text-decoration: none;
+}
+.StarColor{
+  color: white;
+}
+.menu_links {
+  cursor: pointer;
+}
+.fontSize{
+  font-size: 140%;
+}
+/* End Star CSS*/
+/* Start Logo CSS*/
+.Logo{
+  width: 10%;
+  height: 10%;
+  background-color: #555;
+  overflow: auto;
+  float: left;
+}
+/*End Logo CSS */
+.footer{
+  display: inline-block;
+  
+}
+.wrapper{
+  align-items: center;
+  margin-top: 3%;
+  display: inline;
+}
+.textFooter{
+  width: 50%;
+  display: inline-block;
+  color: white;
+  font-size: 130%;
+  margin-left: 5%;
+  text-align: right;
+  margin-top: 3%;
+}
+.wrapper .button {
+  display:inline-block;
+  height: 60px;
+  width: 60px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .icon i{
+  color: black;
+}
+.wrapper .button .icon a{
+  background-color: white;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button .icon a i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.icon  i:hover{
+  color: blue;
+  transform: translateY(-20px);
+  }
+  .wrapper .icon2 i{
+    color: black;
+  }
+  .wrapper .button .icon2 a{
+    background-color: white;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button .icon2 i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+  }
+  .icon2 i:hover{
+  color: #1da1f1;
+  transform: translateY(-20px);
+  }
+  .wrapper .icon3 i{
+    color: black;
+  }
+.wrapper .button .icon3 a{
+  background-color:white ;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button .icon3 i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.icon3 i:hover{
+color: #c32aa3;
+transform: translateY(-20px);
+}
+/*End FOOTER CSS */
+/*Start Footer For mobile */
+@media only screen and (max-width:500px)   {
+  .footer{
+    display: inline;
+  }
+  .wrapper{
+    align-items: center;
+    margin-top: 3%;
+    display: inline;
+  }
+  .textFooter{
+    width: 50%;
+    display: inline;
+    color: white;
+    font-size: 130%;
+    margin-left: 5%;
+    text-align: right;
+    margin-top: 3%;
+  }
+  .wrapper .button {
+    display:inline;
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+  }  
+  
+.wrapper p{
+  color: orange;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 5.5s steps(30, end),
+    blink-caret .9s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+  
+}
+/*End Footer for mobile */
+/* Start Hint head CSS*/
+#sentence{
+
+  margin-top: -5%;
+  margin-left: 1%;
+  background-color: black;
+  color: orange;
+  border: 2px solid red;
+  width: 15%;
+  font-size: 150%;
+  visibility: hidden;
+  margin-bottom: 1%;
+}
+.sentenceDarkMode{
+  margin-top: -5%;
+  margin-left: 1%;
+  color: black;
+  border: 2px solid red;
+  width: 15%;
+  font-size: 150%;
+  margin-bottom: 1%;
+}
+
+.wrapper p{
+  color: orange;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 5.5s steps(30, end),
+    blink-caret .9s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+.hintImage img{
+  margin-top: 1%;
+  border-radius: 50%;
+  width: 10%;
+  background-color: black;
+  float: left;
+  margin-bottom: 5%;
+  animation: jump 0.9s infinite;
+}
+@keyframes jump{
+  0%{
+    transform: translateY(0px);
+    
+  }
+  50%{ 
+    transform: translateY(60px);
+  }
+  100%{ 
+    transform: translateY(0px);
+  }
+}
+#stop{
+  animation-play-state: paused ;
+
+}
+.hintImage img:hover{
+  cursor: pointer;
+  transform: translateY();
+}
+.hintImage img{
+  margin-top: 1%;
+  border-radius: 50%;
+  width: 10%;
+  background-color: black;
+  float: left;
+}
+.hintImage img:hover{
+  cursor: pointer;
+  transform: translateY(-20px);
+}
+/* End hint head CSS*/
+/* Start hint head for mobile CSS*/
+@media only screen and (max-width:500px){
+  
+  .hintImage img{
+    margin-top: -20%;
+    margin-top: 1%;
+    border-radius: 50%;
+    width: 20%;
+    background-color: black;
+    float: left;
+    margin-bottom:20%;
+  }
+  #sentence{
+
+    margin-top: 10%;
+    margin-right: 10%;
+    color: white;
+    border: 2px solid red;
+    width: 30%;
+    font-size: 110%;
+    visibility: hidden;
+    margin-bottom: 1%;
+    float: left;
+  }
+  .hintImage img:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+  }
+}
+/*Start DARK MODE CSS*/
+.dark-mode {
+  background-color: white;
+  color: black;
+  border: 2px black;
+}
+.dark-mode-border-line{
+  border-right: 4px dotted black;
+  border-left: 4px dotted black;
+  margin:3% 1%;
+  text-align: center;
+  float: left;
+  width: 28%;
+  padding: 10px;
+  height: 300px;
+}
+.darkSliderMode{
+  width: 3%;
+}
+/*End DARK MODE CSS */
+/* Start Register CSS*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+*:focus {
+  outline: none;
+}
+
+#login-box {
+  position: relative;
+  margin: 5% auto;
+  margin-bottom: 0%;
+  width: 600px;
+  height: 400px;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 220px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-bottom: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.2s ease;
+}
+
+input[type="submit"] {
+  margin-top: 28px;
+  width: 120px;
+  height: 32px;
+  background: #16a085;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+input[type="submit"]:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+.or {
+  position: absolute;
+  top: 180px;
+  left: 280px;
+  width: 40px;
+  height: 40px;
+  background: #DDD;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+}
+
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+  background: url('Images/registerform.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.right .loginwith {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #FFF;
+  text-align: center;
+}
+
+a.social-signin {
+  margin-bottom: 20px;
+  width: 220px;
+  height: 26px;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+a.social-signin:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+a.social-signin.facebook {
+  background: #32508E;
+ text-decoration: none;
+}
+
+a.social-signin.twitter {
+  background: #55ACEE;
+  text-decoration: none;
+}
+
+a.social-signin.google {
+  background: #DD4B39;
+  text-decoration: none;
+}
+
+@media only screen and (max-width:500px) {
+  
+#login-box {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.or {
+  position: absolute;
+  margin-left:-23%;
+  background: #DDD;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+}
+.left{
+  width: 50%;
+}
+.right{
+  width: 50%;
+}
+a.social-signin.facebook {
+  margin-left:-17%;
+  background: #32508E;
+ text-decoration: none;
+}
+
+a.social-signin.twitter {
+  margin-left:-17%;
+  background: #55ACEE;
+  text-decoration: none;
+}
+
+a.social-signin.google {
+  margin-left:-17%;
+  background: #DD4B39;
+  text-decoration: none;
+}
+}
+
+/* Start Genre CSS*/
+.genre{
+  margin-left:30%;
+  text-align: center;
+  color: white;
+  margin-top: 0%;
+  font-size: 30px;
+  padding: 1%;
+  color: orange;
+  border: 4px solid gray;
+  border-radius: 45%;
+  background-color: black; 
+}
+.genre:hover{
+  cursor: pointer;
+  background-color: gray;
+}
+.genreTwo{
+  margin-left:2%;
+  text-align: center;
+  color: white;
+  margin-top: 0%;
+  font-size: 30px;
+  padding: 1%;
+  color: orange;
+  border: 4px solid gray;
+  border-radius: 45%;
+  background-color: black;
+}
+.genreTwo:hover{
+  cursor: pointer;
+  background-color: gray;
+}
+.genreThree{
+  margin-left:2%;
+  color: white;
+  border-radius: 45%;
+  color: orange;
+  border: 4px solid gray;
+  background-color: black;
+  width: 13%;
+}
+
+.ageR{
+  margin:0%;
+  font-size: 30px;
+  color: orange;
+  border: 4px solid orange;
+  width: 35%;
+  text-align: center;
+  margin-left: 30%;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+.genreThree:hover{
+  cursor: pointer;
+  background-color: gray;
+}
+
+@media only screen and (max-width:500px) {
+  .genre{
+    margin-left:3%;
+    text-align: center;
+    color: white;
+    margin-top: 0%;
+    font-size: 25px;
+    padding: 1%;
+    color: orange;
+    border: 4px solid gray;
+    border-radius: 45%;
+    background-color: black; 
+  }
+  .genreTwo{
+    margin-left:2%;
+    text-align: center;
+    color: white;
+    margin-top: 0%;
+    font-size: 25px;
+    padding: 1%;
+    color: orange;
+    border: 4px solid gray;
+    border-radius: 45%;
+    background-color: black;
+  }
+  .genreThree{
+    margin-left:2%;
+    color: white;
+    border-radius: 45%;
+    color: orange;
+    border: 4px solid gray;
+    background-color: black;
+    width: 20%;
+  }
+  .ageR{
+    margin:0%;
+    font-size: 15px;
+    color: orange;
+    border: 4px solid orange;
+    width: 35%;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+
+  .Trailers{
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.login{
+font-size: 150%;
+  text-decoration: none;
+  margin-left: 43%;
+  color: green;
+}

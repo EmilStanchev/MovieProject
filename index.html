@@ -1,0 +1,78 @@
+<!Doctype html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="style.css">
+            <script src="custom.js"></script>
+            <link rel="shortcut icon" type="image/x-icon" href="logo.jpg">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+            <title>Home</title>
+        </head>
+    <body>
+        <section id="hero">
+            <nav>
+                <div class="NavBar">
+                    <img id="changeImage" onclick="changeImage();modeDark()" class="darkSliderMode" src="https://cdn4.iconfinder.com/data/icons/multimedia-flat-30px/30/sun_light_mode_day-512.png" >
+                    <a href="index.html"> Home </a>
+                    <a href="Movies.html"> Movies </a>
+                    <a href="Series.html"> Series </a>
+                    <a href="Contact.html"> Contacts </a>
+                    <a href="Register.html">Register</a>
+                </div>
+            </nav>
+        </section>
+            <div class="row">
+                <div class="column">
+                  <h2 id="h1" class="columnTitle">Series. Movies. </h2>
+                  <p id="h2" class="fontSize">Hit series and movies with subtitles and family content dubbed in Bulgarian. </p>
+                </div>
+                <div id="border" class="secondColumn">
+                    <h2 id="h3" class="columnTitle">Select, browse and decide</h2>
+                  <p id="h4" class="fontSize" >We offer you hit series and movies. Sit down with your family and enjoy. </p>
+                </div>
+                <div class="column">
+                    <h2 id="h5" class="columnTitle">Make the right choice!</h2>
+                  <p id="h6" class="fontSize">Read the summary we offer for each one movie and series to see if you like it.</p>
+                </div>
+            </div>
+
+            <section class="slider">
+                <h1 id="h7" class="topSerialsTitle">Popular movies and series</h1>
+                    <div class="homeSlider">
+                        <img src="Images/godfather.jpg">
+                        <img src="Images/arrow.jpg">
+                        <img src="Images/matrix.jpg">
+                    </div>
+              </section>
+        </section>
+        <footer>
+            <div  class="wrapper">
+               <div class="textFooter">
+                  <p class="textFooter">Author: Emil Stanchev <span style="color: red;"> &copy; </span></p>
+               </div>
+                  <div class="button">
+                       <div class="icon">
+                          <a  href="#" > <i class="fab fa-facebook-f"></i> </a>
+                      </div>
+                  </div>
+                   <div class="button">
+                       <div class="icon2"> 
+                         <a href="https://twitter.com/JustEmil22"><i class="fab fa-twitter"></i> </a> 
+                       </div>
+                   </div>
+               <div class="button">
+                  <div class="icon3">
+                      <a  href="https://www.instagram.com/emobe263/"><i class="fab fa-instagram"></i> </a>
+                 </div>
+              </div>
+          </div>
+        </div>    
+         
+     <div  class="hintImage">
+        <div id="sentence"> </div>
+        <img  onclick="generate(); stopAnimate()" src="Images/hint.png">
+    </div>
+</div>
+          </footer>
+    </body>
+</html>

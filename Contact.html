@@ -1,0 +1,54 @@
+<!Doctype html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="shortcut icon" type="image/x-icon" href="logo.jpg">
+            <link rel="stylesheet" href="style.css">
+            <script src="custom.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+            <title>Contacts</title>
+        </head>
+    <body style="background-image: url(Images/collage.jpg);">
+        <nav>
+            <div class="NavBar">
+                <a href="index.html"> Home </a>
+                <a href="Movies.html"> Movies</a>
+                <a href="Series.html"> Series</a>
+                <a href="Contact.html"> Contacts </a>
+                <a href="Register.html">Register</a>
+            </div>
+        </nav>
+        
+        <form class="form">
+            <h2>CONTACT US</h2>
+            <p type="Name:"><input placeholder="Write your name here.."></input></p>
+            <p type="Email:"><input placeholder="Enter you Email"></input></p>
+            <textarea class="message">What would you like to tell us ...</textarea>  
+            <button type="button" onclick="changeText()">Send Message</button>
+            <button  class="afterClick" >Thank you for the reply </button>
+            <script>
+                function changeText(){
+                    document.querySelector(".afterClick").style.visibility= 'visible' ;
+                    document.querySelector("button").style.visibility= 'hidden' ;
+                }
+            </script>
+            <div>
+                <div class="wrapper">
+                   <div class="button">
+                       <div class="icon">
+                      <a  href="#" > <i class="fab fa-facebook-f"></i> </a>
+                       </div>
+                   </div>
+                  <div class="button">
+                     <div class="icon2"> 
+                      <a href="https://twitter.com/JustEmil22"><i class="fab fa-twitter"></i> </a> 
+                     </div>
+                  </div>
+                 <div class="button">
+                      <div class="icon3">
+                          <a  href="https://www.instagram.com/emobe263/"><i class="fab fa-instagram"></i> </a>
+                     </div>
+                 </div>
+          </form>
+    </body>
