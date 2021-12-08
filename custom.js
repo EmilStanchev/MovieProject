@@ -28,13 +28,9 @@ function changeImage() {
     }
 } 
 changeImage();
-/*Starting function for stopping animation */
-function stopAnimate(){
-    let element = document.getElementsByClassName("hintImage")
-    element.getElementById(sentence).toggle("stop")
-} 
-stopAnimate();
 /*END CHANGEIMAGE JS */
+
+
 /*Start DARKMODE JS */
 function modeDark() {
     var body = document.body;
@@ -100,5 +96,3 @@ function modeDark() {
  }
  modeDark(); 
 /*End DARKMODE JS */
-
-

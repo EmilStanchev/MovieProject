@@ -30,9 +30,70 @@ transform: translateY(-10px);
 #changeImage{
 width: 3%;
 }
+.mobileBar{
+  display: none;
+  margin-bottom: 15%;
+}
+.mobileBar ul {
+  list-style:none;
+  padding:0% 20px;
+  margin: 0;
+  height: 60px;
+  border: none;
+}
+
+
+.mobileBar ul li {
+  display: block;
+}
+
+
+.mobileBar ul li a {
+  color:white;
+  display:block;
+  padding:0px 40px;
+  text-decoration:none;
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  border: none;
+}
+
+.mobileBar ul li:hover {
+  display: inline-block;
+}
+
+
+.mobileBar ul li:hover > a{
+    color:darkturquoise;
+}
+
+.mobileBar ul li:hover > ul {
+  display:inline-block;
+}
+
+.mobileBar ul ul {
+  padding:0;
+  display:none;
+  width: 100%;
+  left: 0px;
+}
 @media only screen and (max-width:500px){
-#changeImage{
-width: 50%;
+  #hero{
+    display: none;
+  }
+  .NavBar{
+    display: none;
+  }
+
+  .mobileBar{
+    display: inline-block;
+  }
+  .mobileBar img{
+    width: 50px;
+  }
+  #changeImage{
+width: 50px;
 }
 }
 @media only screen and (max-width:500px) {
@@ -273,6 +334,7 @@ text-align: center;
 /*End ContactForm CSS*/
 @media only screen and (max-width:500px) {
 .form{
+  margin-top: 30%;
   margin-left: 3%;
   width: 80%;
 }
@@ -595,10 +657,6 @@ transform: translateY(-20px);
     transform: translateY(0px);
   }
 }
-#stop{
-  animation-play-state: paused ;
-
-}
 .hintImage img:hover{
   cursor: pointer;
   transform: translateY();
@@ -815,6 +873,7 @@ a.social-signin.google {
 @media only screen and (max-width:500px) {
   
 #login-box {
+  margin-top: 30%;
   position: relative;
   width: 100%;
   height: 400px;
