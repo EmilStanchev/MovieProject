@@ -5,16 +5,19 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="shortcut icon" type="image/x-icon" href="logo.jpg">
             <link rel="stylesheet" href="style.css">
+            <script src="custom.js"></script>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <title>American Sniper</title>
         </head>
-    <body style="background-color: black;">
+    <body>
         <nav>
             <div class="NavBar" >
                 <a href="Movies.html"> Back </a>
                 <a href="https://www.netflix.com/bg/title/80013871?source=35"> Watch </a>
+                <img id="changeImage" onclick="changeImage();modeDark()" class="darkSliderMode" src="https://cdn4.iconfinder.com/data/icons/multimedia-flat-30px/30/sun_light_mode_day-512.png" >
+
             </div>
         </nav>
         <div class="Peakyslider">
@@ -38,7 +41,7 @@
         </div>
 
     <div>
-        <h1 style="color: white; text-align: center;"> American Sniper </h1>
+        <h1 id="h1" style="color: white; text-align: center;"> American Sniper </h1>
         <button  class="genre" >Drama</button>
         <button  class="genreTwo" >Action</button>
         <button  class="genreTwo" >Military</button>
@@ -55,7 +58,7 @@
         <span class="fa fa-star StarColor"></span>  
         <span class="fa fa-star StarColor"></span>   <!-- For blank star -->
         <span style="font-size: large; color: white;"> 7.3/10</span>
-        <p class="ReadMore">Summary: Chris Kyle (Bradley Cooper) was nothing more than a Texas man who dreamt of becoming a cowboy, but in his thirties he found out that maybe his life needed something different, something where he could express his real talent, something that could help America in its fight against terrorism. So he joined the S.E.A.L.s in order to become a sniper. After marrying Taya (Sienna Miller), Kyle and the other members of the team are called for their first tour of Iraq. Kyle's struggle isn't with his missions, but about his relationship with the reality of the war and, once returned at home, how he manages to handle it with his urban life, his wife, and kids.</p>
+        <p id="h2" class="ReadMore">Summary: Chris Kyle (Bradley Cooper) was nothing more than a Texas man who dreamt of becoming a cowboy, but in his thirties he found out that maybe his life needed something different, something where he could express his real talent, something that could help America in its fight against terrorism. So he joined the S.E.A.L.s in order to become a sniper. After marrying Taya (Sienna Miller), Kyle and the other members of the team are called for their first tour of Iraq. Kyle's struggle isn't with his missions, but about his relationship with the reality of the war and, once returned at home, how he manages to handle it with his urban life, his wife, and kids.</p>
         <iframe class="Trailers" width="1320" height="615"
         src= "http://www.youtube.com/embed/99k3u9ay1gs">
         </iframe>

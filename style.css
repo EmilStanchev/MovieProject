@@ -42,12 +42,6 @@ width: 3%;
   border: none;
 }
 
-
-.mobileBar ul li {
-  display: block;
-}
-
-
 .mobileBar ul li a {
   color:white;
   display:block;
@@ -78,6 +72,76 @@ width: 3%;
   width: 100%;
   left: 0px;
 }
+
+.mobileBar ul li {
+  display: block;
+}
+#registerId {
+visibility: hidden;
+transition: all 0.3s ease-out;
+cursor: pointer;
+}
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.registerpopup {
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+
+}
+.registerpopup a{
+  width: 70%;
+  left: -110px;
+  background: none;
+}
+.popup .registerpopup {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  width: 20px;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: all 200ms;
+
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 80%;
+  width: 100%;
+}
+.overlay {
+  position: fixed;
+  top: 50%;
+  bottom: 0;
+  left:0%;
+  right: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
 @media only screen and (max-width:500px){
   #hero{
     display: none;
@@ -680,7 +744,7 @@ transform: translateY(-20px);
     margin-top: -20%;
     margin-top: 1%;
     border-radius: 50%;
-    width: 20%;
+    width: 40%;
     background-color: black;
     float: left;
     margin-bottom:20%;
@@ -884,7 +948,7 @@ a.social-signin.google {
 
 .or {
   position: absolute;
-  margin-left:-23%;
+  margin-left:-15%;
   background: #DDD;
   border-radius: 50%;
   line-height: 40px;
@@ -1025,10 +1089,18 @@ a.social-signin.google {
     width: 100%;
   }
 }
-
+/*Start login CSS */
 .login{
 font-size: 150%;
   text-decoration: none;
   margin-left: 43%;
   color: green;
+}
+/*End login CSS */
+ 
+/*Start Movie`s TITLE CSS */
+.titlesForMovies{
+  color: white;
+  text-align: center;
+  
 }

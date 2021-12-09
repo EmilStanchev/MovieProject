@@ -5,16 +5,19 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="shortcut icon" type="image/x-icon" href="logo.jpg">
             <link rel="stylesheet" href="style.css">
+            <script src="custom.js"></script>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <title>Joker</title>
         </head>
-    <body style="background-color: black;">
+    <body>
         <nav>
             <div class="NavBar" >
                 <a href="Movies.html"> Back </a>
                 <a href="https://www.amazon.com/Joker-Joaquin-Phoenix/dp/B07YLP14JH"> Watch </a>
+                <img id="changeImage" onclick="changeImage();modeDark()" class="darkSliderMode" src="https://cdn4.iconfinder.com/data/icons/multimedia-flat-30px/30/sun_light_mode_day-512.png" >
+
             </div>
         </nav>
         <div class="Peakyslider">
@@ -36,7 +39,7 @@
     </div>
     </figure>
         </div>
-        <h1 style="color: white; text-align: center;">Joker </h1>
+        <h1 id= "h1"  style="color: white; text-align: center; ">Joker </h1>
         <button  class="genre" >Drama</button>
         <button  class="genreTwo" >Action</button>
         <button  class="genreTwo" >Adventure</button>
@@ -52,7 +55,7 @@
         <i class="fa fa-star-half-full" style="color:orange"></i>  <!-- For half star -->  
         <span class="fa fa-star StarColor"></span>   <!-- For blank star -->
         <span style="font-size: large; color: white;"> 8.4/10</span>
-        <p class="ReadMore">Summary: Arthur Fleck is a wannabe stand-up comic who suffers from many mental illnesses, including one which causes him to laugh uncontrollably when he is nervous, and often gets him into bad situations. Arthur's mental health causes almost all people in society to reject and look down upon him, even though all he wants is to be accepted by others. After being brutally beaten, having his medication cut off, Arthur's life begins to spiral downward out-of-control into delusions, violence, and anarchy until he eventually transforms into Gotham's infamous Clown-Prince of Crime.</p>
+        <p  id= "h2" class="ReadMore">Summary: Arthur Fleck is a wannabe stand-up comic who suffers from many mental illnesses, including one which causes him to laugh uncontrollably when he is nervous, and often gets him into bad situations. Arthur's mental health causes almost all people in society to reject and look down upon him, even though all he wants is to be accepted by others. After being brutally beaten, having his medication cut off, Arthur's life begins to spiral downward out-of-control into delusions, violence, and anarchy until he eventually transforms into Gotham's infamous Clown-Prince of Crime.</p>
         <iframe class="Trailers" width="1320" height="615"
         src= "http://www.youtube.com/embed/zAGVQLHvwOY">
         </iframe>

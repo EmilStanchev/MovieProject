@@ -37,6 +37,7 @@ function modeDark() {
     body.classList.toggle("dark-mode");
     var slider = document.getElementById("h1");
     slider.classList.toggle("dark-mode")
+    slider.style.color = "orange";
     var slider = document.getElementById("h2");
     slider.classList.toggle("dark-mode")
     var slider = document.getElementById("h3");
@@ -96,3 +97,14 @@ function modeDark() {
  }
  modeDark(); 
 /*End DARKMODE JS */
+function registerSignIn() {
+    let a = document.getElementById("registerId");
+    let b = document.getElementById("register");
+    a.style.visibility= "visible";  
+    b.style.visibility = "hidden";
+    
+    
+}registerSignIn();
+
+
+//<input onclick= "registerSignIn()" id="register" type="submit" name="signup_submit"  value="Sign me up" />

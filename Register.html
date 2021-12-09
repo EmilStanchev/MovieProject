@@ -39,9 +39,18 @@
               <input type="text"  placeholder="Username" />
               <input type="text"  placeholder="E-mail" />
               <input type="password"  placeholder="Password" />
-              <input type="password"  placeholder="Confirm password" />
-              
-              <input type="submit" name="signup_submit" value="Sign me up" />
+              <input type="password"  placeholder="Confirm password" />  
+              <div class="registerpopup">
+              <a href="#popup1"><input onclick= "registerSignIn()" id="register" type="submit" name="signup_submit"  value="Sign me up" /></a>
+            </div>
+              <div id="popup1" class="overlay">
+            <div class="popup">
+              <a class="close" href="#">&times;</a>
+              <div class="content">
+                Thank you for registering and for the trust!
+              </div>
+            </div>
+            </div> 
             </div>
             
             <div class="right">
